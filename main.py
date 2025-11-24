@@ -2,7 +2,7 @@ import telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 import random
 
-TOKEN = "7671109192:AAE6UDc-1ilmwUAg08d4vx0aFDa2znC6EQ0"
+TOKEN = "YOUR_TOKEN_HERE"
 bot = telebot.TeleBot(TOKEN)
 
 # Клавиатура
@@ -22,3 +22,4 @@ def handle_message(message):
 		bot.send_message(message.chat.id, "Нажми на кнопку 😉")
 
 bot.polling()
+
